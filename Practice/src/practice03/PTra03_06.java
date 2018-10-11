@@ -28,11 +28,11 @@ public class PTra03_06 {
 		if (random<=100&&random>=71) {
 			System.out.println(random+"☆☆☆☆☆") ;
 		}
-		else if (random<=1&&random>=71) {
-			System.out.println(random+"年はうるう年ではありません。");
+		else if (random<=70&&random>=31) {
+			System.out.println(random+"☆☆☆☆");
 		}
 		else {
-			System.out.println(random+"年はうるう年です");
+			System.out.println(random+"☆☆☆");
 		}
 	}
 }
