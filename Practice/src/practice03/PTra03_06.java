@@ -25,6 +25,14 @@ public class PTra03_06 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
-
+		if (random<=100&&random>=71) {
+			System.out.println(random+"☆☆☆☆☆") ;
+		}
+		else if (random<=1&&random>=71) {
+			System.out.println(random+"年はうるう年ではありません。");
+		}
+		else {
+			System.out.println(random+"年はうるう年です");
+		}
 	}
 }
