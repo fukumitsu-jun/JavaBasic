@@ -12,6 +12,7 @@ public class PTra04_05 {
 		// 下記の命令は、入力型プログラムで必要な記述になります。
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
+		
 		boolean winFlg = false;
 
 		System.out.print("じゃんけんゲームを開始します。");
