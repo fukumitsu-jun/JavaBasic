@@ -10,9 +10,22 @@ public class PTra07_03 {
 	public static void main(String[] args) {
 
 		// ★ char型の配列keywordを定義し 「'平', '島', '沼', '山', '森'」 で初期化してください
+		char[] keyword = new char[5];
 
+	        // 配列の各要素に値を代入
+		keyword[0] = '森';
+		keyword[1] = '山';
+		keyword[2] = '沼';
+		keyword[3] = '島';
+		keyword[4] = '平';
 
 		// ★ 配列keywordに格納されている値を後ろから順番に全て表示してください
+		 System.out.println(keyword[0]);
+		 System.out.println(keyword[1]);
+		 System.out.println(keyword[2]);
+		 System.out.println(keyword[3]);
+		 System.out.println(keyword[4]);
+		 
 
 	}
 }
