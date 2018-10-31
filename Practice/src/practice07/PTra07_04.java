@@ -20,8 +20,8 @@ public class PTra07_04 {
 		}
 
 		// ★ 0～51の中からランダムで値を取得して、変数indexに代入してください
-		trump=index;
-		int index = new java.util.Random().nextInt(10);
+		
+		int index = new java.util.Random().nextInt(52);
 		System.out.println(index);
 
 

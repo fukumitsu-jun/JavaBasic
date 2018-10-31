@@ -21,8 +21,8 @@ public class PTra07_05 {
 		 * 後処理：変数iに1を足して、変数iを上書きしてください
 		 */
 		//------for start
-		c i = 0;
-		for (int i = 0; i < 5; i++) {
+		int i = 0;
+		for (int i = 0; i < 1000; i++) {
 			array[i]  = i+1;
 		}
 			// ★ 0～100000の中からランダムで値を取得して、配列arrayのi番目に代入してください
