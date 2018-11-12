@@ -22,11 +22,14 @@ public class PTra10_01 {
 	 * 		なし
 	 */
 
+	
+	
+	
 	public static void main(String[] args) {
 
 		// Userクラスを作成後に着手してください
 		// ★ User型の変数usを宣言してください
-
+		User us;
 		// ★ 変数usに、Userクラスのインスタンスを作成・代入してください
 
 
