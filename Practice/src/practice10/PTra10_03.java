@@ -34,13 +34,20 @@ public class PTra10_03 {
 
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
-
+		String[] score = line.split(",");
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
 		// ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
-
+		us.userId = Integer.parseInt(score[0]);//Integer.parseIntでStringからintに変換してる
+		us.userNm = score[1];
+		us.mail = score[2];
+		us.password = score[3];
 
 		// ★ 変数usに格納されているインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
-
+		System.out.println(us.userId);
+		System.out.println(us.userNm);
+		System.out.println(us.mail);
+		System.out.println(us.password);
+		
 	}
 }
