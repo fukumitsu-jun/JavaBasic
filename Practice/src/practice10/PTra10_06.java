@@ -12,6 +12,7 @@ public class PTra10_06 {
 	 * PTra10_05で作成したCarクラスを使用します
 	 */
 
+
 	public static void main(String[] args) {
 
 		/*
@@ -34,11 +35,13 @@ public class PTra10_06 {
 
 		// ★ 変数carに格納されているインスタンスのgasolineフィールドに、50を代入してください
 		 car.gasoline = 50;
-		 car2.gasoline = 40;
-		 car3.gasoline = 30;
+		 car2.gasoline = 100;
+		 car3.gasoline = 80;
 
 		// 目的地までの距離
 		final int distance = 300;
+		final int distance2 = 300;
+		final int distance3 = 300;
 
 		/*
 		 * ★ 変数carに格納されているインスタンスメソッドrunを使って、目的地まで進んでください
@@ -48,7 +51,11 @@ public class PTra10_06 {
 		 */
 
 		int total = 0;
+		int total2 = 0;
+		int total3 = 0;
 		int n = 0;
+		int n2 = 0;
+		int n3 = 0;
 
 		while( total < distance ) {
 			int run = car.run();
@@ -66,6 +73,37 @@ public class PTra10_06 {
 			}
 			}
 			}
+		while( total2 < distance2 ) {
+			int run2 = car2.run();
+			if ( run2 < 0 ) {
 
+				System.out.println("目的地に到達できませんでした");
+				break;
+
+			} else {
+				total2 = total2 + run2;
+				n2++;
+
+		if ( total2 >= distance2 ){
+				System.out.println("目的地にまで" + n2 +"時間かかりました。残りのガソリンは、" +car2.gasoline +"リットルです");
+			}
+			}
+			}
+		while( total3 < distance3 ) {
+			int run3 = car3.run();
+			if ( run3 < 0 ) {
+
+				System.out.println("目的地に到達できませんでした");
+				break;
+
+			} else {
+				total3 = total3 + run3;
+				n3++;
+
+		if ( total3 >= distance3 ){
+				System.out.println("目的地にまで" + n3 +"時間かかりました。残りのガソリンは、" +car3.gasoline +"リットルです");
+			}
+			}
+			}
 	}
 }
