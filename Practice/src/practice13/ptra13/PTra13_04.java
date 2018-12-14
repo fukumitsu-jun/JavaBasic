@@ -6,6 +6,9 @@
  */
 package practice13.ptra13;
 
+import practice13.common.Hero;
+import practice13.common.Slime;
+
 public class PTra13_04 {
 
 	/*
@@ -15,7 +18,11 @@ public class PTra13_04 {
 	public static void main(String[] args) {
 
 		// ★ HeroインスタンスとSlimeインスタンスを作成し、それぞれの名前に"勇者", "スライム"を設定してください
+		Hero a = new Hero();
+		Slime b = new Slime();
 
+		a.setName("勇者");
+		b.setName("スライム");
 
 		/*
 		 * ★ HeroとSlimeを、どちらかが体力０になるまで戦わせます
