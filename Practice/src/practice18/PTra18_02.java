@@ -6,22 +6,15 @@
  */
 package practice18;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import practice18.entity.Player;
+
 public class PTra18_02 {
 
-	/*
-	 * ★ BestElevenCandidate.csvの情報を保持するためのクラス、entity.Playerクラスを作成してください
-	 *
-	 * フィールド
-	 * 		position	：	String
-	 * 		name		：	String
-	 * 		country		：	String
-	 * 		team		：	String
-	 * メソッド
-	 * 		各アクセサ
-	 *
-	 * 		toString()	：	Objectクラスのオーバーライド
-	 * 		各フィールドの値を、カンマ区切りの文字列で取得する
-	 */
 
 	public static void main(String[] args) {
 
@@ -32,9 +25,28 @@ public class PTra18_02 {
 		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
 
+		// ★ ArrayListに格納されているインスタンス全てのtoStringメソッドを実行し、出力してください
+		// ※ できれば拡張for文を使いましょう
+		ArrayList<Player> array = new ArrayList<>();
+		try (Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"), "UTF-8")) {
+			while (scanner.hasNext()) {
+				String line = scanner.nextLine();
+				String[] data = line.split(",");	
+				Player p = new Player();	
+				p.setPosition(data[0]);	
+				p.setName(data[1]);	
+				p.setCountry(data[2]);	
+				p.setTeam(data[3]);	
+				array.add(p);	
+			}
+		} catch (FileNotFoundException e) {
+			System.out.println("ファイルが見つかりません");
+		}
 
 		// ★ ArrayListに格納されているインスタンス全てのtoStringメソッドを実行し、出力してください
 		// ※ できれば拡張for文を使いましょう
-
+		for (Player p : array) {
+			System.out.println(p.toString());
+		}
 	}
 }

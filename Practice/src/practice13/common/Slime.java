@@ -5,3 +5,7 @@ public class Slime extends Character{
 		super(10,5,2);
 	}
 }
+/*
+ * ★ common.Characterクラスを継承した、common.Slimeクラスを作成してください
+ * 	●HP, POWER, ENDURANCEはそれぞれ、（10, 5, 2）
+ */

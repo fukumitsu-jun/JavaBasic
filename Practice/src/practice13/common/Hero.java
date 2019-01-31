@@ -5,3 +5,7 @@ public class Hero extends Character{
 		super(25,10,7);
 	}
 }
+/*
+ * ★ common.Characterクラスを継承した、common.Heroクラスを作成してください
+ * 	●HP, POWER, ENDURANCEはそれぞれ、（25, 10, 7）
+ */
